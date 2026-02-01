@@ -1,0 +1,27 @@
+name: Control de Calidad (CI)
+
+# Trigger: ¿Cuándo se despierta el robot?
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+# Jobs: Las tareas que hará
+jobs:
+  validar-html:
+    runs-on: ubuntu-latest #Se usa una máquina virtual de Linux prestada por github
+    steps:
+      - name: Bajar el código
+        uses: actions/checkout@v3
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Instalar el Linter (detector de errores)
+        run: npm install -g htmlhint
+
+      - name: Correr pruebas de html
+        run: htmlhint index.html
