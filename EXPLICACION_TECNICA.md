@@ -33,6 +33,13 @@ Hemos adoptado **Tailwind CSS (versión 3)**.
 - **Por qué v3**: Elegimos específicamente la versión 3 (y no la 4) para asegurar máxima compatibilidad con el ecosistema actual de herramientas y evitar problemas de configuración inicial.
 - **Configuración**: `tailwind.config.js` escanea `index.html` y todos los archivos en `src/` para generar solo el CSS que usamos.
 
+## 7. Nuevas Secciones (Servicios)
+
+Hemos agregado una sección de **Servicios** en `index.html` para demostrar el poder de Tailwind:
+
+- **Grid System**: Usamos `grid grid-cols-1 md:grid-cols-3` para crear un diseño que es de 1 columna en móviles y 3 en PC automáticamente.
+- **Tarjetas (Cards)**: Usamos utilidades de sombreado (`shadow-md`, `hover:shadow-lg`) para dar profundidad y feedback visual al pasar el mouse.
+
 ### ESLint (El Inspector)
 
 - **Rol**: Analiza el código buscando errores antes de que sucedan.
