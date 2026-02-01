@@ -1,0 +1,33 @@
+{
+  "name": "landing-mecanico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aagv2004/mecanico-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aagv2004/mecanico-landing/issues"
+  },
+  "homepage": "https://github.com/aagv2004/mecanico-landing#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "eslint": "^9.39.2",
+    "postcss": "^8.5.6",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^3.4.19",
+    "vite": "^7.3.1"
+  }
+}

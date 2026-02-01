@@ -5,13 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mecánico de Confianza</title>
   </head>
-  <body>
-    <header
-      style="text-align: center; padding: 50px; background-color: #f4f4f4"
-    >
-      <h1>Mecánico de Confianza</h1>
-      <p>Tu mecánico de confianza</p>
-      <button>Contactar urgente! +569 1234 5678</button>
+  <body class="font-sans text-gray-800 m-0 p-0">
+    <header class="text-center p-12 bg-gray-100">
+      <h1 class="text-4xl font-bold mb-4">Mecánico de Confianza</h1>
+      <p class="text-xl mb-6">Tu mecánico de confianza</p>
+      <button
+        class="bg-blue-600 text-white border-none py-2 px-6 text-lg rounded hover:bg-blue-700 transition duration-300"
+      >
+        Contactar urgente! +569 1234 5678
+      </button>
     </header>
+
+    <section id="servicios" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Mis Servicios
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Servicio 1 -->
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+          >
+            <h3 class="text-xl font-bold mb-2 text-blue-600">
+              Diagnóstico Computarizado
+            </h3>
+            <p class="text-gray-600">
+              Escaneo completo de motor y sistemas eléctricos para detectar
+              fallas precisas.
+            </p>
+          </div>
+
+          <!-- Servicio 2 -->
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+          >
+            <h3 class="text-xl font-bold mb-2 text-blue-600">
+              Mantención Kilométrica
+            </h3>
+            <p class="text-gray-600">
+              Cambio de aceite, filtros y revisión de niveles según pauta del
+              fabricante.
+            </p>
+          </div>
+
+          <!-- Servicio 3 -->
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+          >
+            <h3 class="text-xl font-bold mb-2 text-blue-600">
+              Frenos y Suspensión
+            </h3>
+            <p class="text-gray-600">
+              Revisión y cambio de pastillas, discos y amortiguadores para tu
+              seguridad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
